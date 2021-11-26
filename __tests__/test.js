@@ -12,7 +12,8 @@ describe('Testing with Jest', () => {
   test.each([
     [1, 1, 2],
     [-1, 1, 0],
-    [3, 2, 5]
+    [3, 2, 5],
+    [4, 4, 8]
   ])('Does %i + %i equals %i', (a, b, expectedResult) => {
     expect(sum(a, b)).toBe(expectedResult);
   });
